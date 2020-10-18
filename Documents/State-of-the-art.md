@@ -43,7 +43,6 @@ We will use the Juice Shop OWASP to show how important it is to be aware of the 
 - [Dafydd Stuttard, Marcus Pinto, *The Web Application Hacker's Handbook - Finding and Exploiting Security Flaws*, 2nd Edition, John Wiley & Sons, 2011](http://index-of.es/EBooks/11_TheWeb%20Application%20Hackers%20Handbook.pdf)
 - <https://portswigger.net/web-security>
 - <https://www.researchgate.net/publication/283180137_Systematic_Review_of_Web_Application_Security_Vulnerabilities_Detection_Methods/>
-- <https://www.researchgate.net/publication/283180137_Systematic_Review_of_Web_Application_Security_Vulnerabilities_Detection_Methods/>
 - <https://owasp.org/www-project-top-ten/>
 - <https://www.acunetix.com/websitesecurity/sql-injection/>
 - <https://www.indusface.com/blog/owasp-top-10-mitigation-techniques/>
@@ -51,7 +50,7 @@ We will use the Juice Shop OWASP to show how important it is to be aware of the 
 ***
 ### 7. Resources and tools
 
-The following tools and tehnology will help us in identifying vulnerabilities in Juice Shop:
+The following tools and technology will help us in identifying vulnerabilities in Juice Shop:
 - Python 3
 - Kali Linux
 - Burpsuite
