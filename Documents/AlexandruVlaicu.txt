@@ -1,1 +1,2 @@
-
+-Research
+-XSS attacks / mitigation methods.
