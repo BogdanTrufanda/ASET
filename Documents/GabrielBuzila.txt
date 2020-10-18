@@ -1,1 +1,2 @@
-
+- Research
+- SQL Injections attacks/mitigation methods
