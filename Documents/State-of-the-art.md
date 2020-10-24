@@ -59,5 +59,6 @@ The following tools and technology will help us in identifying vulnerabilities i
 - John the Ripper
 - Hashcat
 - W3af
+- DirBuster
 - SQLMap
 - Retire JS
