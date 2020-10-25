@@ -42,5 +42,5 @@ We will use different tools and exploits written by ourself to present the vulne
 ***
 # Contact
 - Bogdan Trufanda: <trufanda.bogdan@gmail.com>
-- Gabriel Buzila: <buila.g@yahoo.com>
+- Gabriel Buzila: <buzila.g@yahoo.com>
 - Alexandru-Ionut Voicu: <vlaicu.ionut09@gmail.com>
