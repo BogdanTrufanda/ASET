@@ -20,23 +20,7 @@ Link presentation website: https://trufandabogdan.wixsite.com/aset2020
 This project aims to raise awareness on the vulnerabilities found in modern web applications. We want to accomplish this by using Juice Shop, an open source project which is described by the creator as being probably the most modern and sophisticated insecure web application. Juice Shop encompasses vulnerabilities from the entire OWASP Top Ten along with many other security flaws found in real-world applications.
 We will use different tools and exploits written by ourself to present the vulnerabilities, and after each one, we will also present at least one way of mitigating it. This presentations will be available on our website as a way of providing useful information for everyone of how they can defend themself against attackers.
 ***
-# Tasks
-### Bogdan Trufanda
-- 
-- 
 
-### Gabriel Buzila
-- 
-- 
-
-### Alexandru-Ionut Voicu
-- 
-- 
-
-### All
-- 
-
-***
 # Coordinators
 - Catalin Birjoveanu
 ***
