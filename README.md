@@ -22,17 +22,17 @@ We will use different tools and exploits written by ourself to present the vulne
 
 Tools used:
 
-Python 3 - for automating attacks/creating exploits
-Kali Linux - linux pentesting distro
-Burpsuite - web proxy
-ZAP - automated web vulnerabilities scanning
-Hydra - login brute forcer
-John the Ripper - hash cracker
-Hashcat - hash cracker
-W3af -  Web Application Attack and Audit Framework
-DirBuster - Directory listing
-SQLMap - Scan for SQL injection
-Retire JS - database of JS libraries with Known Vulnerabilities
+Python 3 - for automating attacks/creating exploits  
+Kali Linux - linux pentesting distro  
+Burpsuite - web proxy  
+ZAP - automated web vulnerabilities scanning  
+Hydra - login brute forcer  
+John the Ripper - hash cracker  
+Hashcat - hash cracker  
+W3af -  Web Application Attack and Audit Framework  
+DirBuster - Directory listing  
+SQLMap - Scan for SQL injection  
+Retire JS - database of JS libraries with Known Vulnerabilities  
 ***
 
 # Coordinators
