@@ -9,7 +9,7 @@ Link presentation website: https://trufandabogdan.wixsite.com/aset2020
 # Checklist
 - [x] Deploy Juice Shop on Heroku
 - [x] Host website
-- [ ] Move website on github pages  
+- [x] Move website on github pages  
 - [ ] Tools used (explained)
 - [ ] Create attack scripts
 - [ ] Top 10 OWASP
