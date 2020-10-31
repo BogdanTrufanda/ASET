@@ -34,14 +34,7 @@ Tools used:
 - DirBuster/ Wfuzz - Directory Bruteforcing
 - SQLMap - Scan for SQL injection  
 - Retire JS - database of JS libraries with Known Vulnerabilities  
-***
-# Tasks
-### Bogdan Trufanda
--
-### Gabriel Buzila
--
-### Alexandru Vlaicu
--
+
 # Coordinators
 - Catalin Birjoveanu
 ***
