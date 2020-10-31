@@ -4,7 +4,7 @@
 # Links
 Link Jira: https://aset2020.atlassian.net/jira/software/projects/ASET2020(MSI1)/boards/1  
 Link Juice Shop: https://juice-shop.herokuapp.com/  
-Link presentation website: https://trufandabogdan.wixsite.com/aset2020
+Link presentation website: https://bogdantrufanda.github.io./
 
 # Checklist
 - [x] Deploy Juice Shop on Heroku
