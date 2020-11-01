@@ -15,3 +15,4 @@
 - [ ] Reset Morty password
 - [ ] NoSQL Manipulation
 - [ ] Ephemeral Accountant
+- [ ] Multiple likes
