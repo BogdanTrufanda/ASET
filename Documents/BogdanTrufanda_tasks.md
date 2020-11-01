@@ -5,7 +5,13 @@
 - [ ] WFuzz/Dirbuster
 
 # Attacks
-- [ ] #
-- [ ] #
-- [ ] #
-- [ ] #
+- [ ] Forged signed JWT
+- [ ] Unsigned JWT
+- [ ] Login Amy
+- [ ] Login Support Team
+- [ ] Poison null byte
+- [ ] Forged Coupon
+- [ ] Login CISO
+- [ ] Reset Morty password
+- [ ] NoSQL Manipulation
+- [ ] Ephemeral Accountant
