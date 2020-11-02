@@ -1,2 +1,0 @@
-- Research
-- Improper Input Validation / Poison null byte
