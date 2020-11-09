@@ -72,7 +72,5 @@ while option != 0:
         givenhash = str(input('Input the hash you want to search.\n'))
         sha1_decrypt(givenhash, list_common_pw)
         md5_decrypt(givenhash, list_common_pw)
-        input('Press enter to return to menu.\n')
-        menu()
     elif option == 0:
         break
