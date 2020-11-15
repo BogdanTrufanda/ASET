@@ -1,0 +1,6 @@
+{"level":"info","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"New login attempt at Sun Nov 15 2020. IP used for request: 192.168.189.1"}
+{"level":"info","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}

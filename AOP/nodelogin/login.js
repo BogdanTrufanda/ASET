@@ -4,6 +4,27 @@ var session = require('express-session');
 var bodyParser = require('body-parser');
 var path = require('path');
 
+//logger
+const winston = require('winston');
+const levels = {
+	error: 0,
+	warn: 1,
+	info: 2,
+	http: 3,
+	verbose: 4,
+	debug: 5,
+	silly: 6
+};
+
+
+
+const customlogger = winston.createLogger({
+	transports: [
+		new winston.transports.Console(),
+		new winston.transports.File({ filename: 'JuiceShop.log' })
+	]
+});
+
 // required for requests
 var app = express();
 app.use(session({
@@ -18,7 +39,7 @@ app.use(bodyParser.json());
 var jsface = require("jsface"),
 	Class = jsface.Class;
 var pointcut = require("../node_modules/jsface/jsface.pointcut");
-const { Console } = require('console');
+const { Console, timeStamp } = require('console');
 
 // Make connection with the mySQL database
 var connection = mysql.createConnection({
@@ -28,11 +49,23 @@ var connection = mysql.createConnection({
 	database: 'nodelogin'
 });
 
+
 // Create an User object 
 var User = Class({
 	constructor: function (username, password) {
-		console.log("\n\n>>>>>>>>>>>>>>>>>> In constructor <<<<<<<<<<<<<<<<<<<<<<");
-		console.log("Values username " + username + " and password " + password + " are set using constructor.")
+		customlogger.log({
+			level: 'info',
+			timeStamp: new Date().toDateString(),
+			ip: require("ip").address(),
+			message: 'Using USER constructor'
+		});
+		customlogger.log({
+			level: 'warn',
+			timeStamp: new Date().toDateString(),
+			ip: require("ip").address(),
+			message: "Values username << " + username + " >> and password << " + password + " >> are set using constructor."
+		});
+
 		this.username = username;
 		this.password = password;
 	},
@@ -67,15 +100,51 @@ var User = Class({
 var advisor = {
 	constructor: {
 		before: function () {
-			console.log("\n\n>>>>>>>>>>>>>>>>>>>>>> before <<<<<<<<<<<<<<<<<<<<<<<<<<");
-			logger()
+			customlogger.log({
+				level: 'info',
+				timeStamp: new Date().toDateString(),
+				ip: require("ip").address(),
+				message: 'Before executing User constructor'
+			});
+			customlogger.log({
+				level: 'warn',
+				timeStamp: new Date().toDateString(),
+				ip: require("ip").address(),
+				message: "New login attempt at " + new Date().toDateString() + ". IP used for request: " + require("ip").address()
+			});
+
+
 		},
 		after: function () {
-			console.log("\n\n>>>>>>>>>>>>>>>>>>>>>> after <<<<<<<<<<<<<<<<<<<<<<<<<<<");
 			if (stopper_SQLi(this.username)) {
-				console.log("User " + this.username + " tried a SQL Injection");
+				let str = this.username;
+				let result = str.match(/[a-zA-Z]{3,}/g);
+				let result2 = str.match(/[^a-zA-Z]+/g);
+
+				customlogger.log({
+					level: 'info',
+					timeStamp: new Date().toDateString(),
+					ip: require("ip").address(),
+					message: 'After executing User constructor'
+				});
+
+				customlogger.log({
+					level: 'warn',
+					timeStamp: new Date().toDateString(),
+					ip: require("ip").address(),
+					message: "User << " + result + " >> tried a SQL Injection with << " + result2 + " >> "
+				});
 				this._username = null;
 			}
+			else {
+				customlogger.log({
+					level: 'info',
+					timeStamp: new Date().toDateString(),
+					ip: require("ip").address(),
+					message: "User << " + this.username + " >> tried a clear authentication"
+				});
+			}
+
 		}
 	},
 };
@@ -94,13 +163,6 @@ function stopper_SQLi(x) {
 	}
 }
 
-// :before function
-function logger() {
-	console.log("New login attempt at " + new Date().toDateString() + ".")
-	console.log("IP used for request: " + require("ip").address());
-}
-
-
 app.get('/', function (request, response) {
 	response.sendFile(path.join(__dirname + '/login.html'));
 });
@@ -111,16 +173,26 @@ app.post('/auth', function (request, response) {
 	if (newUser.password && newUser.password) {
 		connection.connect(function (err) {
 			if (err) throw err;
-			connection.query("SELECT * FROM accounts WHERE username = '" + newUser.username + "' AND password ='" + newUser.password + "'", function (err, result, fields) {
+			connection.query("SELECT * FROM accounts WHERE username = '" + newUser.username + " ' AND password ='" + newUser.password + "'", function (err, result, fields) {
 				if (err) throw err;
 
 				if (Object.keys(result).length === 0) {
 					response.send('\nLog in failed');
-					console.log(result);
+					customlogger.log({
+						level: 'warn',
+						timeStamp: new Date().toDateString(),
+						ip: require("ip").address(),
+						message: "There was no Database leakage"
+					});
 				}
 				else {
 					response.send('\nLog in successfully');
-					console.log(result);
+					customlogger.log({
+						level: 'warn',
+						timeStamp: new Date().toDateString(),
+						ip: require("ip").address(),
+						message: result
+					});
 				}
 				response.end();
 			});
