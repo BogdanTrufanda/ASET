@@ -1,6 +1,110 @@
-{"level":"info","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"Before executing User constructor"}
-{"level":"warn","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"New login attempt at Sun Nov 15 2020. IP used for request: 192.168.189.1"}
-{"level":"info","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"Using USER constructor"}
-{"level":"warn","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
-{"level":"info","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
-{"level":"warn","timeStamp":"Sun Nov 15 2020","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/15/2020 9:52:37 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 9:52:37 PM","ip":"192.168.189.1","message":"New login attempt"}
+{"level":"info","timeStamp":"11/15/2020 9:52:37 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 9:52:37 PM","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 9:52:37 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 9:52:37 PM","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"New login attempt"}
+{"level":"info","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"Values username << test '--- >> and password << sdfsdfjsdo >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"After executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"User << test >> tried a SQL Injection with <<  '--- >> "}
+{"level":"warn","timeStamp":"11/15/2020 9:53:35 PM","ip":"192.168.189.1","message":"There was no Database leakage"}
+{"level":"info","timeStamp":"11/15/2020 11:06:04 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:06:04 PM","ip":"192.168.189.1","message":"New login attempt"}
+{"level":"info","timeStamp":"11/15/2020 11:06:04 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:06:04 PM","ip":"192.168.189.1","message":"Values username << test >> and password << dasdasd >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:06:04 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:06:04 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: "}
+{"level":"info","timeStamp":"11/15/2020 11:06:31 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:06:31 PM","ip":"192.168.189.1","message":"New login attempt"}
+{"level":"info","timeStamp":"11/15/2020 11:06:31 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:06:31 PM","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:06:31 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:06:31 PM","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/15/2020 11:08:24 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:08:24 PM","ip":"192.168.189.1","message":"New login attempt"}
+{"level":"info","timeStamp":"11/15/2020 11:08:24 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:08:24 PM","ip":"192.168.189.1","message":"Values username << test >> and password << sdfsdfsdf >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:08:24 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:08:24 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: "}
+{"level":"info","timeStamp":"11/15/2020 11:08:55 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:08:55 PM","ip":"192.168.189.1","message":"New login attempt"}
+{"level":"info","timeStamp":"11/15/2020 11:08:55 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:08:55 PM","ip":"192.168.189.1","message":"Values username << dadsad >> and password << asdasd >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:08:55 PM","ip":"192.168.189.1","message":"User << dadsad >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:08:55 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/15/2020 11:11:49 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:11:50 PM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/15/2020, 11:11:50 PM."}
+{"level":"info","timeStamp":"11/15/2020 11:11:50 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:11:50 PM","ip":"192.168.189.1","message":"Values username << test >> and password << testtt >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:11:50 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:11:50 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/15/2020 11:13:36 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:13:36 PM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/15/2020, 11:13:36 PM."}
+{"level":"info","timeStamp":"11/15/2020 11:13:36 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:13:36 PM","ip":"192.168.189.1","message":"Values username << test >> and password << testtt >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:13:36 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:13:36 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/15/2020 11:14:03 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:03 PM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/15/2020, 11:14:03 PM."}
+{"level":"info","timeStamp":"11/15/2020 11:14:03 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:03 PM","ip":"192.168.189.1","message":"Values username << test >> and password << asdasdad >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:14:03 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:03 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/15/2020 11:14:26 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:26 PM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/15/2020, 11:14:27 PM."}
+{"level":"info","timeStamp":"11/15/2020 11:14:27 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:27 PM","ip":"192.168.189.1","message":"Values username << asda >> and password << asdads >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:14:27 PM","ip":"192.168.189.1","message":"User << asda >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:27 PM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/15/2020 11:14:32 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:32 PM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/15/2020, 11:14:32 PM."}
+{"level":"info","timeStamp":"11/15/2020 11:14:32 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:32 PM","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:14:32 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:14:32 PM","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/15/2020 11:36:06 PM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:36:06 PM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/15/2020, 11:36:06 PM."}
+{"level":"info","timeStamp":"11/15/2020 11:36:06 PM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/15/2020 11:36:06 PM","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"11/15/2020 11:36:06 PM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/15/2020 11:36:06 PM","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/16/2020 12:21:03 AM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 12:21:03 AM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/16/2020, 12:21:03 AM."}
+{"level":"info","timeStamp":"11/16/2020 12:21:03 AM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/16/2020 12:21:03 AM","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"11/16/2020 12:21:03 AM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/16/2020 12:21:03 AM","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/16/2020 8:19:30 AM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 8:19:30 AM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/16/2020, 8:19:30 AM."}
+{"level":"info","timeStamp":"11/16/2020 8:19:30 AM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/16/2020 8:19:30 AM","ip":"192.168.189.1","message":"Values username << test >> and password << test >> are set using constructor."}
+{"level":"info","timeStamp":"11/16/2020 8:19:30 AM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/16/2020 8:19:30 AM","ip":"192.168.189.1","message":[{"id":1,"username":"test","password":"test","email":"test@test.com"}]}
+{"level":"info","timeStamp":"11/16/2020 9:25:41 AM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:25:41 AM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/16/2020, 9:25:41 AM."}
+{"level":"info","timeStamp":"11/16/2020 9:25:41 AM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:25:41 AM","ip":"192.168.189.1","message":"Values username << test >> and password << dasdasd >> are set using constructor."}
+{"level":"info","timeStamp":"11/16/2020 9:25:41 AM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/16/2020 9:25:42 AM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/16/2020 9:35:10 AM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:35:10 AM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/16/2020, 9:35:10 AM."}
+{"level":"info","timeStamp":"11/16/2020 9:35:10 AM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:35:10 AM","ip":"192.168.189.1","message":"Values username << test >> and password << teste >> are set using constructor."}
+{"level":"info","timeStamp":"11/16/2020 9:35:10 AM","ip":"192.168.189.1","message":"User << test >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/16/2020 9:35:10 AM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/16/2020, 9:40:32 AM."}
+{"level":"info","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"Values username << test '--  >> and password << parola >> are set using constructor."}
+{"level":"info","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"After executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"User << test >> tried a SQL Injection with <<  '--  >> "}
+{"level":"warn","timeStamp":"11/16/2020 9:40:32 AM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}
+{"level":"info","timeStamp":"11/16/2020 9:44:19 AM","ip":"192.168.189.1","message":"Before executing User constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:44:19 AM","ip":"192.168.189.1","message":"New login attempt from 192.168.189.1 at 11/16/2020, 9:44:19 AM."}
+{"level":"info","timeStamp":"11/16/2020 9:44:19 AM","ip":"192.168.189.1","message":"Using USER constructor"}
+{"level":"warn","timeStamp":"11/16/2020 9:44:19 AM","ip":"192.168.189.1","message":"Values username << admin >> and password << administrator >> are set using constructor."}
+{"level":"info","timeStamp":"11/16/2020 9:44:19 AM","ip":"192.168.189.1","message":"User << admin >> tried a clear authentication"}
+{"level":"warn","timeStamp":"11/16/2020 9:44:19 AM","ip":"192.168.189.1","message":"There was no Database leakage with result: []"}

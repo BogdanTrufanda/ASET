@@ -3,21 +3,14 @@ var express = require('express');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var path = require('path');
-
-//logger
 const winston = require('winston');
-const levels = {
-	error: 0,
-	warn: 1,
-	info: 2,
-	http: 3,
-	verbose: 4,
-	debug: 5,
-	silly: 6
-};
 
+// Import jsface - required for OOP and AOP
+var jsface = require("jsface"),
+	Class = jsface.Class;
+var pointcut = require("../node_modules/jsface/jsface.pointcut");
 
-
+//Custom logger
 const customlogger = winston.createLogger({
 	transports: [
 		new winston.transports.Console(),
@@ -25,7 +18,16 @@ const customlogger = winston.createLogger({
 	]
 });
 
-// required for requests
+// Make connection with the mySQL database and create a pool for DB requests
+let sqlCon = mysql.createPool({
+	connectionLimit: 100,
+	host: 'localhost',
+	user: 'root',
+	password: 'root',
+	database: 'nodelogin'
+});
+
+// Required for requests
 var app = express();
 app.use(session({
 	secret: 'secret',
@@ -35,33 +37,18 @@ app.use(session({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// Import jsface - required for OOP and AOP
-var jsface = require("jsface"),
-	Class = jsface.Class;
-var pointcut = require("../node_modules/jsface/jsface.pointcut");
-const { Console, timeStamp } = require('console');
-
-// Make connection with the mySQL database
-var connection = mysql.createConnection({
-	host: 'localhost',
-	user: 'root',
-	password: 'root',
-	database: 'nodelogin'
-});
-
-
 // Create an User object 
 var User = Class({
 	constructor: function (username, password) {
 		customlogger.log({
 			level: 'info',
-			timeStamp: new Date().toDateString(),
+			timeStamp: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 			ip: require("ip").address(),
 			message: 'Using USER constructor'
 		});
 		customlogger.log({
 			level: 'warn',
-			timeStamp: new Date().toDateString(),
+			timeStamp:  new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 			ip: require("ip").address(),
 			message: "Values username << " + username + " >> and password << " + password + " >> are set using constructor."
 		});
@@ -102,18 +89,16 @@ var advisor = {
 		before: function () {
 			customlogger.log({
 				level: 'info',
-				timeStamp: new Date().toDateString(),
+				timeStamp: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 				ip: require("ip").address(),
-				message: 'Before executing User constructor'
+				message: "Before executing User constructor"
 			});
 			customlogger.log({
 				level: 'warn',
-				timeStamp: new Date().toDateString(),
+				timeStamp:  new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 				ip: require("ip").address(),
-				message: "New login attempt at " + new Date().toDateString() + ". IP used for request: " + require("ip").address()
+				message: "New login attempt from " + require("ip").address() + " at " + new Date().toLocaleString() + "."
 			});
-
-
 		},
 		after: function () {
 			if (stopper_SQLi(this.username)) {
@@ -123,14 +108,14 @@ var advisor = {
 
 				customlogger.log({
 					level: 'info',
-					timeStamp: new Date().toDateString(),
+					timeStamp:  new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 					ip: require("ip").address(),
-					message: 'After executing User constructor'
+					message: "After executing User constructor"
 				});
 
 				customlogger.log({
 					level: 'warn',
-					timeStamp: new Date().toDateString(),
+					timeStamp: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 					ip: require("ip").address(),
 					message: "User << " + result + " >> tried a SQL Injection with << " + result2 + " >> "
 				});
@@ -139,12 +124,11 @@ var advisor = {
 			else {
 				customlogger.log({
 					level: 'info',
-					timeStamp: new Date().toDateString(),
+					timeStamp: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 					ip: require("ip").address(),
 					message: "User << " + this.username + " >> tried a clear authentication"
 				});
 			}
-
 		}
 	},
 };
@@ -163,44 +147,54 @@ function stopper_SQLi(x) {
 	}
 }
 
+//  Root Page
 app.get('/', function (request, response) {
 	response.sendFile(path.join(__dirname + '/login.html'));
 });
 
+
+// Auth Post Request
 app.post('/auth', function (request, response) {
 	var newUser = new User(request.body.username, request.body.password);
 
 	if (newUser.password && newUser.password) {
-		connection.connect(function (err) {
+
+		sqlCon.getConnection((err, connection) => {
 			if (err) throw err;
-			connection.query("SELECT * FROM accounts WHERE username = '" + newUser.username + " ' AND password ='" + newUser.password + "'", function (err, result, fields) {
+
+			// If connection succeeds
+			sqlCon.query("SELECT * FROM accounts WHERE username = '" + newUser.username + " ' AND password ='" + newUser.password + "'", (err, result, fields) => {
 				if (err) throw err;
 
 				if (Object.keys(result).length === 0) {
 					response.send('\nLog in failed');
 					customlogger.log({
 						level: 'warn',
-						timeStamp: new Date().toDateString(),
+						timeStamp:  new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 						ip: require("ip").address(),
-						message: "There was no Database leakage"
+						message: "There was no Database leakage with result: " + JSON.stringify(result, undefined, 2)
 					});
 				}
 				else {
 					response.send('\nLog in successfully');
 					customlogger.log({
 						level: 'warn',
-						timeStamp: new Date().toDateString(),
+						timeStamp: new Date().toLocaleDateString() + " " + new Date().toLocaleTimeString(),
 						ip: require("ip").address(),
 						message: result
 					});
 				}
-				response.end();
+				connection.release();
 			});
 		});
-	} else {
+	}
+
+	// If login/pass fields empty
+	else {
 		response.send('Please enter username and Password!');
 		response.end();
 	}
 });
 
+// Port
 app.listen(3000);
