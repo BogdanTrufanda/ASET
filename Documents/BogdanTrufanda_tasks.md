@@ -5,8 +5,8 @@
 - [X] WFuzz/Dirbuster/Gobuster
 
 # Attacks
-- [ ] Forged signed JWT
-- [ ] Unsigned JWT
+- [X] Forged signed JWT
+- [X] Unsigned JWT
 - [ ] Login Amy
 - [ ] Login Support Team
 - [ ] Poison null byte
