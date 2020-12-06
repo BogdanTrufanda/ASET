@@ -1,16 +1,16 @@
 # Tools
-- [ ] John/Hashcat
-- [ ] W3af
-- [ ] Retire JS
+- [x] John/Hashcat
+- [x] W3af
+- [x] Retire JS
 
 # Attacks
-- [ ] CSRF
+- [x] CSRF
 - [ ] Product Tampering
 - [ ] Forged Feedback
 - [ ] Forged Review
 - [ ] Two Factor Authentification
 - [ ] Weird Crypto
-- [ ] Repetitive registration
+- [x] Repetitive registration
 - [ ] Expired Coupon
 - [ ] Admin Registration
 - [ ] Payback Time
