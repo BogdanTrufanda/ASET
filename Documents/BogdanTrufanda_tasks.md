@@ -1,8 +1,8 @@
 # Tools
-- [ ] Kali linux 
-- [ ] Python attack framework
-- [ ] Hydra/Medusa  
-- [ ] WFuzz/Dirbuster/Gobuster
+- [X] Kali linux 
+- [X] Python attack framework
+- [X] Hydra/Medusa  
+- [X] WFuzz/Dirbuster/Gobuster
 
 # Attacks
 - [ ] Forged signed JWT
