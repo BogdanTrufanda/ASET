@@ -1,7 +1,7 @@
 # Tools
-- [ ] Burp Suite
-- [ ] ZAP
-- [ ] SQLmap
+- [X] Burp Suite
+- [X] ZAP
+- [X] SQLmap
 
 # Attacks
 - [ ] DOM XSS
@@ -11,8 +11,6 @@
 - [ ] User Credentials
 - [ ] Database Schema
 - [ ] Christmas Special
-- [ ] Upload size
-- [ ] Upload type
+- [X] Upload size
+- [X] Upload type
 - [ ] Captcha bypass
-
-
