@@ -7,7 +7,7 @@
 # Attacks
 - [X] Forged signed JWT
 - [X] Unsigned JWT
-- [ ] Login Amy
+- [X] Login Amy
 - [ ] Login Support Team
 - [ ] Poison null byte
 - [ ] Forged Coupon
