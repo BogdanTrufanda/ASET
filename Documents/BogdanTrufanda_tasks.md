@@ -9,7 +9,7 @@
 - [X] Unsigned JWT
 - [X] Login Amy
 - [ ] Login Support Team
-- [ ] Poison null byte
+- [X] Poison null byte
 - [ ] Forged Coupon
 - [ ] Login CISO
 - [ ] Reset Morty password
