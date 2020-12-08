@@ -1,6 +1,6 @@
 # Tools
 - [x] John/Hashcat
-- [x] W3af
+- [x] Nikto
 - [x] Retire JS
 
 # Attacks
