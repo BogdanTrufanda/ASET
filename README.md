@@ -10,7 +10,7 @@ Link presentation website: https://bogdantrufanda.github.io./
 - [x] Deploy Juice Shop on Heroku
 - [x] Host website
 - [x] Move website on github pages  
-- [ ] Tools used (explained)
+- [X] Tools used (explained)
 - [ ] Create attack scripts
 - [ ] Top 10 OWASP
 - [ ] Publish explained vulnerabilities on website
