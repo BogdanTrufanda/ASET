@@ -16,4 +16,4 @@
 - [ ] NoSQL Manipulation
 - [ ] Ephemeral Accountant
 - [X] Multiple likes
-- [ ] Reset Uvogin's password via the Forgot Password mechanism
+- [X] Reset Uvogin's password via the Forgot Password mechanism
