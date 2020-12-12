@@ -8,6 +8,7 @@
 - [X] Forged signed JWT
 - [X] Unsigned JWT
 - [X] Login Amy
+- [X] Reset Morty's Password
 - [ ] Login Support Team
 - [X] Poison null byte
 - [ ] Forged Coupon
