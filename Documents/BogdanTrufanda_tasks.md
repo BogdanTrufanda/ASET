@@ -12,7 +12,7 @@
 - [X] Poison null byte
 - [ ] Forged Coupon
 - [ ] Login CISO
-- [ ] Reset Morty password
+- [X] Reset Morty password
 - [ ] NoSQL Manipulation
 - [ ] Ephemeral Accountant
 - [X] Multiple likes
