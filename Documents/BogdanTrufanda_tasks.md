@@ -12,8 +12,7 @@
 - [X] Poison null byte
 - [ ] Forged Coupon
 - [ ] Login CISO
-- [X] Reset Morty password
-- [ ] NoSQL Manipulation
+- [X] NoSQL Manipulation
 - [ ] Ephemeral Accountant
 - [X] Multiple likes
 - [X] Reset Uvogin's password via the Forgot Password mechanism
