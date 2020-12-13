@@ -5,12 +5,12 @@
 
 # Attacks
 - [ ] DOM XSS
-- [ ] Whitelist Bypass
-- [ ] Meta Geo Stalking
-- [ ] Visual Geo Stalking
+- [X] Whitelist Bypass
+- [X] Meta Geo Stalking
+- [X] Visual Geo Stalking
 - [ ] User Credentials
 - [ ] Database Schema
 - [ ] Christmas Special
 - [X] Upload size
 - [X] Upload type
-- [ ] Captcha bypass
+- [X] Captcha bypass
