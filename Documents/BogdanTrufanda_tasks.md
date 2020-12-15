@@ -9,10 +9,10 @@
 - [X] Unsigned JWT
 - [X] Login Amy
 - [X] Reset Morty's Password
-- [ ] Login Support Team
 - [X] Poison null byte
-- [ ] Forged Coupon
 - [X] NoSQL Manipulation
-- [ ] Ephemeral Accountant
 - [X] Multiple likes
 - [X] Reset Uvogin's password via the Forgot Password mechanism
+- [ ] File Uploads & Reverse shell listeners
+- [ ] LFI
+- [ ] Vulnerable web servers
