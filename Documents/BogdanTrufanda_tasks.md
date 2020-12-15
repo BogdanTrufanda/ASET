@@ -12,7 +12,6 @@
 - [ ] Login Support Team
 - [X] Poison null byte
 - [ ] Forged Coupon
-- [ ] Login CISO
 - [X] NoSQL Manipulation
 - [ ] Ephemeral Accountant
 - [X] Multiple likes
