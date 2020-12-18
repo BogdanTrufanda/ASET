@@ -14,5 +14,5 @@
 - [X] Multiple likes
 - [X] Reset Uvogin's password via the Forgot Password mechanism
 - [ ] File Uploads & Reverse shell listeners
-- [ ] LFI
+- [X] LFI
 - [ ] Vulnerable web servers
