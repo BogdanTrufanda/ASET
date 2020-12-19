@@ -15,4 +15,4 @@
 - [X] Reset Uvogin's password via the Forgot Password mechanism
 - [X] File Uploads & Reverse shell listeners
 - [X] LFI
-- [ ] Vulnerable web servers
+- [X] Vulnerable web servers
