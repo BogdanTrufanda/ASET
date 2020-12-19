@@ -13,6 +13,6 @@
 - [X] NoSQL Manipulation
 - [X] Multiple likes
 - [X] Reset Uvogin's password via the Forgot Password mechanism
-- [ ] File Uploads & Reverse shell listeners
+- [X] File Uploads & Reverse shell listeners
 - [X] LFI
 - [ ] Vulnerable web servers
