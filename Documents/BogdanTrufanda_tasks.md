@@ -1,4 +1,5 @@
 # Tools
+- [X] Metasploit 
 - [X] Kali linux 
 - [X] Python attack framework
 - [X] Hydra/Medusa  
