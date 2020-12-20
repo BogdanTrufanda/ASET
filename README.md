@@ -33,7 +33,8 @@ Tools used:
 - W3af -  Web Application Attack and Audit Framework  
 - DirBuster/ Wfuzz - Directory Bruteforcing
 - SQLMap - Scan for SQL injection  
-- Retire JS - database of JS libraries with Known Vulnerabilities  
+- Retire JS - database of JS libraries with Known Vulnerabilities
+- Metasploit
 
 # Coordinators
 - Catalin Birjoveanu
