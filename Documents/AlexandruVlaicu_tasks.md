@@ -5,12 +5,12 @@
 
 # Attacks
 - [x] CSRF
-- [ ] Product Tampering
+- [x] Product Tampering
 - [x] Forged Feedback
-- [ ] Forged Review
-- [ ] Two Factor Authentification
-- [ ] Weird Crypto
+- [x] Forged Review
+- [x] Two Factor Authentification
+- [x] Weird Crypto
 - [x] Repetitive registration
-- [ ] Expired Coupon
+- [x] Expired Coupon
 - [x] Admin Registration
 - [x] Payback Time
