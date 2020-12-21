@@ -12,9 +12,9 @@ Link presentation website: https://bogdantrufanda.github.io./
 - [x] Move website on github pages  
 - [X] Tools used (explained)
 - [ ] Create attack scripts
-- [ ] Top 10 OWASP
-- [ ] Publish explained vulnerabilities on website
-- [ ] Publish explained mitigation of vulnerabilities on website
+- [X] Top 10 OWASP
+- [X] Publish explained vulnerabilities on website
+- [X] Publish explained mitigation of vulnerabilities on website
 
 ***
 # Requirements Analysis
