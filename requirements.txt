@@ -1,0 +1,4 @@
+PySimpleGUI>=4.33.0
+termcolor
+python3-nmap
+jwt
