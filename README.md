@@ -3,7 +3,7 @@
 ***
 # Links
 Link Jira: https://aset2020.atlassian.net/jira/software/projects/ASET2020(MSI1)/boards/1  
-Link Juice Shop: https://aset2020.herokuapp.com 
+Link Juice Shop: https://aset2020.herokuapp.com  
 Link presentation website: https://bogdantrufanda.github.io./
 
 # Checklist
