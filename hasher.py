@@ -68,6 +68,26 @@ def get_type(inputhash: str) -> str:
     return hash_type
 
 
+def decrypt(inputhash: str, pwlist: str) -> str:
+    hash_type = get_type(inputhash)
+    if hash_type == "MD5":
+        decryptPassword = md5_decrypt(inputhash, pwlist)
+    elif hash_type == "SHA1":
+        decryptPassword = sha1_decrypt(inputhash, pwlist)
+    elif hash_type == "SHA256":
+        decryptPassword = sha256_decrypt(inputhash, pwlist)
+    return decryptPassword
+
+
+def decide(inputhash: str) ->bool:
+    hash_type = get_type(inputhash)
+    if hash_type == "MD5" or hash_type == "SHA1" or hash_type == "SHA256":
+        return True
+    else:
+        return False
+
+
+
 def gui_pc_funct():
     window = create_pc_gui()
     while True:
@@ -89,13 +109,8 @@ def gui_pc_funct():
                 window.Refresh()
         if event == "Crack!":
             if values[0] != "" and values["Browse"] != "":
-                arg2 = get_type(values[0])
-                if arg2 == "MD5":
-                    window['textbox2'].update("Password is: " + md5_decrypt(values[0],values["Browse"]) )
-                elif arg2 == "SHA1":
-                    window['textbox2'].update("Password is: " + sha1_decrypt(values[0],values["Browse"]))
-                elif arg2 == "SHA256":
-                    window['textbox2'].update("Password is: " + sha256_decrypt(values[0],values["Browse"]))
+                if decide(values[0]):
+                    window['textbox2'].update("Password is: " + decrypt(values[0],values["Browse"]))
                 else:
                     window['textbox2'].update("The hash type is not supported or not a hash")
                     window.Refresh()
