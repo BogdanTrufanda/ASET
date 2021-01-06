@@ -39,6 +39,7 @@ $ searchsploit -u
 
 ```console
 $ python3 main.py
+```
 
 
 
