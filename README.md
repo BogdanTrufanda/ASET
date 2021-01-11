@@ -25,8 +25,6 @@ $ cd ASET
 # install the requirements
 $ python3 -m pip install -r requirements.txt
 
-# install the prerequisites
-
 # clone sherlock repo
 $ git clone https://github.com/sherlock-project/sherlock.git
 
