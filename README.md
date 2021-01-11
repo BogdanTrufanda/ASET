@@ -26,8 +26,11 @@ $ cd ASET
 $ python3 -m pip install -r requirements.txt
 
 # install the prerequisites
+
 # clone sherlock repo
 $ git clone https://github.com/sherlock-project/sherlock.git
+
+# install searchsploit
 $ git clone https://github.com/offensive-security/exploit-database.git /opt/exploit-database
 $ ln -sf /opt/exploit-database/searchsploit /usr/local/bin/searchsploit
 $ searchsploit -u
