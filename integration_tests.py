@@ -47,7 +47,7 @@ class IntegrationTestCases(unittest.TestCase):
         self.assertEqual(result, True)
 
 
-    def test_decideOK(self):
+    def test_decideNOK(self):
         """
         Test the decision of to call or not the decrypt() method based on the supported hash types.
         False variant with not supported length given hash.
